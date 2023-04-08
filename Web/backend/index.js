@@ -1,8 +1,25 @@
 require('dotenv').config()
 
-// const passport = require("passport");
-// const cookieSession = require("cookie-session");
-// const passportStrategy = require("./passport");
+//Multer **************************************************
+
+const multer = require('multer')
+const path = require('path')
+
+// const storage = multer.diskStorage({
+//     destination: (req, file, cb) => {
+//         cb(null, './images')
+//     },
+
+//     filename: (req, file, cb) => {
+//         cb(null, Date.now() + path.extname(file.originalname))
+//     }
+// })
+
+// const upload = multer({
+//     storage: storage
+// })
+
+//******************************************* */
 
 require("./Database/db")
 const cors = require("cors");
